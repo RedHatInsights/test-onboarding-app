@@ -16,7 +16,7 @@ const App = (props) => {
     insights.chrome.init();
 
     // TODO change this to your appname
-    insights.chrome.identifyApp('test-onboarding-app');
+    insights.chrome.identifyApp('test_onboarding_app');
     const unregister = insights.chrome.on('APP_NAVIGATION', (event) =>
       history.push(`/${event.navId}`)
     );
